@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void swapArray(int *a, int *b)
+void swap(int *a, int *b)
 {
     int temp;
     temp = *a;
@@ -30,7 +30,7 @@ void bubbleSort(int arr[], int n)
         {
             if (arr[j] > arr[j + 1])
             {
-                swapArray(&arr[j], &arr[j + 1]);
+                swap(&arr[j], &arr[j + 1]);
                 isSortted = 1;
             }
         }
